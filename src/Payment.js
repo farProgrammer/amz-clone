@@ -7,7 +7,7 @@ import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "./reducer";
 import axios from './axios';
-import { db } from './firebase';
+import { db } from "./firebase";
 
 function Payment() {
     const [{ basket, user }, dispatch] = useStateValue();
@@ -29,7 +29,6 @@ function Payment() {
                 method: 'post',
                 // Stripe expects the total in a currencies subunits
                 url: `/payments/create?total=${getBasketTotal(basket) * 100}`
-            
             });
             setClientSecret(response.data.clientSecret)
         }
@@ -37,9 +36,8 @@ function Payment() {
         getClientSecret();
     }, [basket])
 
-  
-
-    
+    console.log('THE SECRET IS >>>', clientSecret)
+    console.log('👱', user)
 
     const handleSubmit = async (event) => {
         // do all the fancy stripe stuff...
@@ -51,7 +49,6 @@ function Payment() {
                 card: elements.getElement(CardElement)
             }
         }).then(({ paymentIntent }) => {
-            
             // paymentIntent = payment confirmation
 
             db
@@ -65,12 +62,11 @@ function Payment() {
                   created: paymentIntent.created
               })
 
-
             setSucceeded(true);
             setError(null)
             setProcessing(false)
 
-             dispatch({
+            dispatch({
                 type: 'EMPTY_BASKET'
             })
 
@@ -103,8 +99,8 @@ function Payment() {
                     </div>
                     <div className='payment__address'>
                         <p>{user?.email}</p>
-                        <p>111 Code Lane</p>
-                        <p>Dallas, Tx</p>
+                        <p>123 React Lane</p>
+                        <p>Los Angeles, CA</p>
                     </div>
                 </div>
 
