@@ -1,0 +1,21 @@
+[debug] [2021-08-20T04:35:02.844Z] ----------------------------------------------------------------------
+[debug] [2021-08-20T04:35:02.846Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\New\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-08-20T04:35:02.846Z] CLI Version:   9.16.5
+[debug] [2021-08-20T04:35:02.847Z] Platform:      win32
+[debug] [2021-08-20T04:35:02.847Z] Node Version:  v14.16.1
+[debug] [2021-08-20T04:35:02.847Z] Time:          Thu Aug 19 2021 23:35:02 GMT-0500 (Central Daylight Time)
+[debug] [2021-08-20T04:35:02.848Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-20T04:35:02.855Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-20T04:35:02.855Z] > authorizing via signed-in user (kfarheena1@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\New\OneDrive\Desktop\amazon_app\amazon-clone
+
