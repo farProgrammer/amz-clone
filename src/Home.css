@@ -4,6 +4,7 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 1500px;
+  background-color: green;
 }
 
 .home__row {
@@ -11,6 +12,7 @@
   z-index: 1;
   margin-left: 5px;
   margin-right: 5px;
+  background-color: slateblue;
 }
 
 .home__image {

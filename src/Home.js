@@ -5,15 +5,14 @@ import Product from "./Product";
 function Home() {
   return (
     <div className="home">
-      <div className="home__container">
+      <div className="home__container" style={{ color: "purple" }}>
         <img
           className="home__image"
           // src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg"
 
-          src="https://assets.pandaily.com/uploads/2020/06/online-shopping-apps.jpg"
+          src="https://m.media-amazon.com/images/G/01/AdProductsWebsite/long-term-assets/ad-specs/ss_expanse_do._TTW_.jpg"
           alt=""
         />
-
         <div className="home__row">
           <Product
             id="12321341"
@@ -30,7 +29,6 @@ function Home() {
             image="https://image.s5a.com/is/image/saks/0400014786970_BLACK?wid=534&hei=712&qlt=90&resMode=sharp2&op_usm=0.9,1.0,8,0"
           />
         </div>
-
         <div className="home__row">
           <Product
             id="4903850"
@@ -54,7 +52,6 @@ function Home() {
             image="https://m.media-amazon.com/images/I/8199jR9H1LL._AC_SY200_.jpg"
           />
         </div>
-
         <div className="home__row">
           <Product
             id="90829332"
